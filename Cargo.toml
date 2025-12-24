@@ -1,0 +1,15 @@
+[package]
+name = "tower-resilience"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Resilience middleware for Tower services: timeout, retry, concurrency limits."
+repository = "https://example.com/udayangaac/tower-resilience" # change later
+readme = "README.md"
+
+[dependencies]
+tower = "0.5"
+tokio = { version = "1", features = ["time", "sync", "macros", "rt-multi-thread"] }
+pin-project-lite = "0.2"
+thiserror = "1"
+rand = "0.8"
